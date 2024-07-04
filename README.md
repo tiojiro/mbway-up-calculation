@@ -31,7 +31,7 @@ Buscar as próximas 10 datas para o prêmio diário:
         <td>Mensal</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">
+        <td valign="top">
             01/01/2024 - 22:36
             <br>02/01/2024 - 23:00
             <br>03/01/2024 - 07:24
@@ -399,7 +399,7 @@ Buscar as próximas 10 datas para o prêmio diário:
             <br>30/12/2024 - 12:12
             <br>31/12/2024 - 13:36
         </td>
-        <td style="vertical-align:top">
+        <td valign="top">
             06/01/2024 - 21:15
             <br>14/01/2024 - 09:45
             <br>15/01/2024 - 11:15
@@ -454,7 +454,7 @@ Buscar as próximas 10 datas para o prêmio diário:
             <br>23/12/2024 - 11:45
             <br>31/12/2024 - 13:15
         </td>
-        <td style="vertical-align:top">
+        <td valign="top">
             27/01/2024 - 07:00
             <br>24/02/2024 - 08:00
             <br>30/03/2024 - 09:00
