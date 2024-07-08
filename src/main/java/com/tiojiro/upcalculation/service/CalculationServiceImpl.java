@@ -15,6 +15,7 @@ import static com.tiojiro.upcalculation.model.Constants.*;
 public class CalculationServiceImpl implements CalculationService{
 
     CalculationHelper helper;
+
     @Override
     public List<String> getDaily(long numberOfDays) {
         List<String> dayList = new ArrayList<>();

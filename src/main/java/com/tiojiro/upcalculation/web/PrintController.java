@@ -17,6 +17,7 @@ import java.util.List;
 public class PrintController {
 
     private PrintService service;
+
     @GetMapping("/readme")
     public ResponseEntity<String> printReadMe(@RequestParam long numberOfDays, @RequestParam long numberOfWeeks, @RequestParam long numberOfMonths) {
         return ResponseEntity.ok(service.printReadMe(numberOfDays, numberOfWeeks, numberOfMonths));

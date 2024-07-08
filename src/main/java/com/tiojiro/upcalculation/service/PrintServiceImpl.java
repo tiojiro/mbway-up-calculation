@@ -13,6 +13,7 @@ import static com.tiojiro.upcalculation.model.Constants.*;
 public class PrintServiceImpl implements PrintService{
 
     CalculationService calculationService;
+
     @Override
     public String printReadMe(long numberOfDays, long numberOfWeeks, long numberOfMonths) {
         StringBuffer daily = new StringBuffer();
