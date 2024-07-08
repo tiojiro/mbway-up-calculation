@@ -26,5 +26,23 @@ public class Constants {
     public static final int NINE_PM_O_CLOCK = 21;
     public static final int FIFTEEN_MINUTES = 15;
     public static final int FORTY_FIVE_MINUTES = 45;
-
+    public static final String LINE_BREAK = "<br>";
+    public static final String README_TEMPLATE = "<table>" +
+                                                    "<tr>" +
+                                                        "<td>Diário</td>" +
+                                                        "<td>Semanal</td>" +
+                                                        "<td>Mensal</td>" +
+                                                    "</tr>" +
+                                                    "<tr>" +
+                                                        "<td valign='top'>" +
+                                                            "{0}" +
+                                                        "</td>" +
+                                                        "<td valign='top'>" +
+                                                            "{1}" +
+                                                        "</td>" +
+                                                        "<td valign='top'>" +
+                                                            "{2}" +
+                                                        "</td>" +
+                                                    "</tr>" +
+                                                 "</table>";
 }
