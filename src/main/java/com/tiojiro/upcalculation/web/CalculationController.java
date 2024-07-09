@@ -15,17 +15,17 @@ public class CalculationController {
     private final CalculationService service;
 
     @GetMapping("/daily")
-    public ResponseEntity<List<String>> getDaily(@RequestParam long numberOfDays) {
+    public ResponseEntity<List<String>> getDaily(@RequestParam(required = true) long numberOfDays) {
         return ResponseEntity.ok(service.getDaily(numberOfDays));
     }
 
     @GetMapping("/weekly")
-    public ResponseEntity<List<String>> getWeekly(@RequestParam long numberOfWeeks) {
+    public ResponseEntity<List<String>> getWeekly(@RequestParam(required = true) long numberOfWeeks) {
         return ResponseEntity.ok(service.getWeekly(numberOfWeeks));
     }
 
     @GetMapping("/monthly")
-    public ResponseEntity<List<String>> getMonthly(@RequestParam long numberOfMonths) {
+    public ResponseEntity<List<String>> getMonthly(@RequestParam(required = true) long numberOfMonths) {
         return ResponseEntity.ok(service.getMonthly(numberOfMonths));
     }
 }

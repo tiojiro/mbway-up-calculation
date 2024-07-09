@@ -16,7 +16,9 @@ public class PrintController {
     private PrintService service;
 
     @GetMapping("/readme")
-    public ResponseEntity<String> printReadMe(@RequestParam long numberOfDays, @RequestParam long numberOfWeeks, @RequestParam long numberOfMonths) {
+    public ResponseEntity<String> printReadMe(@RequestParam(required = true) long numberOfDays
+                                            , @RequestParam(required = true) long numberOfWeeks
+                                            , @RequestParam(required = true) long numberOfMonths) {
         return ResponseEntity.ok(service.printReadMe(numberOfDays, numberOfWeeks, numberOfMonths));
     }
 }
