@@ -3,6 +3,7 @@ package com.tiojiro.upcalculation.model;
 import java.time.LocalDateTime;
 
 public class Constants {
+
     public static final LocalDateTime dailyStartDate = LocalDateTime.of(2021,9,22,7,12);
     public static final LocalDateTime weeklyStartDate = LocalDateTime.of(2021,9,25,21,45);
     public static final LocalDateTime monthlyStartDate = LocalDateTime.of(2021,9,25,13,0);

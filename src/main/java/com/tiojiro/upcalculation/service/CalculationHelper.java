@@ -12,18 +12,23 @@ import java.util.List;
 import static com.tiojiro.upcalculation.model.Constants.*;
 
 @Component
-public class CalculationHelper{
-    public boolean isHourExceptionRule(int hour){ return hour+ONE > TWENTY_THREE; }
+public class CalculationHelper {
 
-    public boolean isMinuteExceptionRule(int minute){ return minute+TWENTY_FOUR > FIFTY_NINE; }
+    public boolean isHourExceptionRule(int hour) {
+        return hour+ONE > TWENTY_THREE;
+    }
 
-    public LocalDateTime getNextWeek(LocalDateTime ldt){
+    public boolean isMinuteExceptionRule(int minute) {
+        return minute+TWENTY_FOUR > FIFTY_NINE;
+    }
+
+    public LocalDateTime getNextWeek(LocalDateTime ldt) {
         if (ldt.getDayOfWeek() == DayOfWeek.SUNDAY)
             return ldt.plusDays(ONE);
         return ldt.plusDays(EIGHT);
     }
 
-    public LocalDateTime getWeeklyHour(LocalDateTime ldt, DayOfWeek dow){
+    public LocalDateTime getWeeklyHour(LocalDateTime ldt, DayOfWeek dow) {
         return switch (dow) {
             case MONDAY -> ldt.withHour(ELEVEN_AM_O_CLOCK);
             case TUESDAY -> ldt.withHour(ONE_PM_O_CLOCK);
@@ -35,11 +40,11 @@ public class CalculationHelper{
         };
     }
 
-    public LocalDateTime getWeeklyMinute(LocalDateTime ldt, Integer count){
+    public LocalDateTime getWeeklyMinute(LocalDateTime ldt, Integer count) {
         return count % TWO == ZERO ? ldt.withMinute(FIFTEEN_MINUTES) : ldt.withMinute(FORTY_FIVE_MINUTES);
     }
 
-    public LocalDateTime getLastSaturdayMonth(LocalDateTime ldt){
+    public LocalDateTime getLastSaturdayMonth(LocalDateTime ldt) {
         YearMonth ym = YearMonth.of(ldt.getYear(),ldt.getMonthValue());
         ldt = ldt.withDayOfMonth(ym.atEndOfMonth().getDayOfMonth());
         while (ldt.getDayOfWeek() != DayOfWeek.SATURDAY){

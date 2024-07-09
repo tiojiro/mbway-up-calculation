@@ -4,15 +4,14 @@ import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.text.MessageFormat;
-import java.util.stream.IntStream;
 
 import static com.tiojiro.upcalculation.model.Constants.*;
 
 @Component
 @AllArgsConstructor
-public class PrintServiceImpl implements PrintService{
+public class PrintServiceImpl implements PrintService {
 
-    CalculationService calculationService;
+    private final CalculationService calculationService;
 
     @Override
     public String printReadMe(long numberOfDays, long numberOfWeeks, long numberOfMonths) {

@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class UpcalculationApplication {
+public class UpCalculationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UpcalculationApplication.class, args);
+		SpringApplication.run(UpCalculationApplication.class, args);
 	}
-
 }

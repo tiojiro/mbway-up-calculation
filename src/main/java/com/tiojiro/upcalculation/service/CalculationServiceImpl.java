@@ -12,9 +12,9 @@ import static com.tiojiro.upcalculation.model.Constants.*;
 
 @Component
 @AllArgsConstructor
-public class CalculationServiceImpl implements CalculationService{
+public class CalculationServiceImpl implements CalculationService {
 
-    CalculationHelper helper;
+    private final CalculationHelper helper;
 
     @Override
     public List<String> getDaily(long numberOfDays) {

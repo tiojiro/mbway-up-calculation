@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CalculationController {
 
-    private CalculationService service;
+    private final CalculationService service;
 
     @GetMapping("/daily")
     public ResponseEntity<List<String>> getDaily(@RequestParam long numberOfDays) {
