@@ -47,7 +47,7 @@ public class CalculationHelper {
     public LocalDateTime getLastSaturdayMonth(LocalDateTime ldt) {
         YearMonth ym = YearMonth.of(ldt.getYear(),ldt.getMonthValue());
         ldt = ldt.withDayOfMonth(ym.atEndOfMonth().getDayOfMonth());
-        while (ldt.getDayOfWeek() != DayOfWeek.SATURDAY){
+        while (ldt.getDayOfWeek() != DayOfWeek.SATURDAY) {
             ldt = ldt.minusDays(ONE);
         }
         return ldt;

@@ -4,14 +4,13 @@ import java.time.LocalDateTime;
 
 public class Constants {
 
-    public static final LocalDateTime dailyStartDate = LocalDateTime.of(2021,9,22,7,12);
-    public static final LocalDateTime weeklyStartDate = LocalDateTime.of(2021,9,25,21,45);
-    public static final LocalDateTime monthlyStartDate = LocalDateTime.of(2021,9,25,13,0);
+    public static final LocalDateTime DAILY_START_DATE = LocalDateTime.of(2021,9,22,7,12);
+    public static final LocalDateTime WEEKLY_START_DATE = LocalDateTime.of(2021,9,25,21,45);
+    public static final LocalDateTime MONTHLY_START_DATE = LocalDateTime.of(2021,9,25,13,0);
     public static final String DATE_PATTERN = "dd/MM/yyyy - HH:mm";
     public static final int ZERO = 0;
     public static final int ONE = 1;
     public static final int TWO = 2;
-    public static final int SEVEN = 7;
     public static final int EIGHT = 8;
     public static final int SIXTEEN = 16;
     public static final int TWENTY_FOUR = 24;
