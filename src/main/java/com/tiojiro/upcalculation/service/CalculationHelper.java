@@ -59,7 +59,7 @@ public class CalculationHelper {
             dayList.add(dateFormatter(calcDate));
     }
 
-    public String dateFormatter (LocalDateTime ldt) {
+    public String dateFormatter(LocalDateTime ldt) {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern(DATE_PATTERN);
         return dtf.format(LocalDateTime.of(ldt.toLocalDate(),ldt.toLocalTime()));
     }
