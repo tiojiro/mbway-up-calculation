@@ -1,5 +1,8 @@
 # MBWay UP - Cálculo das datas dos Prêmios
 
+*Fonte das informações:
+<br>https://www.mbway.pt/mb-way-up-regulamento/
+
 ### Regra para o Prêmio Diário
 "Atribuído todos os dias com início a 22 de Setembro de 2021 às 07:12. Nos dias seguintes é atribuído em horário diferente, com a seguinte lógica: 
 HORA do Prêmio Diário do dian anterior +1 (+7 se o resultado for > que 23);
