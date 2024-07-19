@@ -19,10 +19,10 @@ public class PrintServiceImpl implements PrintService {
         calculationService.getDaily(numberOfDays).forEach(d-> daily.append(d).append(LINE_BREAK));
 
         StringBuffer weekly = new StringBuffer();
-        calculationService.getMonthly(numberOfWeeks).forEach(d-> weekly.append(d).append(LINE_BREAK));
+        calculationService.getWeekly(numberOfWeeks).forEach(d-> weekly.append(d).append(LINE_BREAK));
 
         StringBuffer monthly = new StringBuffer();
-        calculationService.getDaily(numberOfMonths).forEach(d-> monthly.append(d).append(LINE_BREAK));
+        calculationService.getMonthly(numberOfMonths).forEach(d-> monthly.append(d).append(LINE_BREAK));
 
         return MessageFormat.format(README_TEMPLATE, daily, weekly, monthly);
     }
