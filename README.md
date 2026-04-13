@@ -26,7 +26,7 @@ Buscar as próximas 10 datas para o prêmio diário:
 <br>Buscar as próximas 10 datas para o prêmio mensal:
 <br>http://localhost:8080/calc/monthly?numberOfMonths=10
 
-### Resultados de datas em 2025
+### Resultados de datas em 2026
 <table>
     <tr>
         <td>Diário</td>
