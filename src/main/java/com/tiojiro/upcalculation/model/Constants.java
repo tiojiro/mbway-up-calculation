@@ -27,22 +27,24 @@ public class Constants {
     public static final int FIFTEEN_MINUTES = 15;
     public static final int FORTY_FIVE_MINUTES = 45;
     public static final String LINE_BREAK = "<br>";
-    public static final String README_TEMPLATE = "<table>" +
-                                                    "<tr>" +
-                                                        "<td>Diário</td>" +
-                                                        "<td>Semanal</td>" +
-                                                        "<td>Mensal</td>" +
-                                                    "</tr>" +
-                                                    "<tr>" +
-                                                        "<td valign='top'>" +
-                                                            "{0}" +
-                                                        "</td>" +
-                                                        "<td valign='top'>" +
-                                                            "{1}" +
-                                                        "</td>" +
-                                                        "<td valign='top'>" +
-                                                            "{2}" +
-                                                        "</td>" +
-                                                    "</tr>" +
-                                                 "</table>";
+    public static final String INDENT1 = "\t";
+    public static final String INDENT2 = "\t\t";
+    public static final String INDENT3 = "\t\t\t";
+    public static final String README_TEMPLATE = "<table>\n" +
+                                                INDENT1 + "<tr>\n" +
+                                                INDENT2 + "<td>Diário</td>\n" +
+                                                INDENT2 + "<td>Semanal</td>\n" +
+                                                INDENT2 + "<td>Mensal</td>\n" +
+                                                INDENT1 + "</tr>\n" +
+                                                INDENT1 + "<tr>\n" +
+                                                INDENT2 + "<td valign='top'>" +
+                                                "{0}\n" +
+                                                INDENT2 + "</td>\n" +
+                                                INDENT2 + "<td valign='top'>" +
+                                                "{1}\n" +
+                                                INDENT2 + "</td>\n" +
+                                                INDENT2 + "<td valign='top'>" +
+                                                "{2}\n" +
+                                                INDENT1 + "</td>\n" +
+                                                "</table>";
 }
